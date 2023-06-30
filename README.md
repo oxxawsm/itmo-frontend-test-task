@@ -1,5 +1,7 @@
-# ITMO frontend test-task
-Made with React, TypeScript, Next.js, Redux
+<img src='https://user-images.githubusercontent.com/63160594/206897763-ae44cd6c-629f-4fcb-bc38-c39742e51c90.png' width='100'>
+
+# Frontend test-task for ITMO
+**Made with React, TypeScript, Next.js, Redux**
 
 ## Clone project
 ```
