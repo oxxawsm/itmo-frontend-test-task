@@ -39,7 +39,7 @@ const Card = (props: CardProps) => {
             <div className={styles.cardContainer} >
                 <div className={styles.imageContainer} >
 
-                     <Image src={props.image_cover} alt="pic"/>
+                     <Image src={props.image_big} alt="pic" layout='fill'/>
 
                 </div>
                 <div className={styles.card} >

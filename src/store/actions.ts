@@ -1,7 +1,7 @@
 export type News = {
     id: number,
     title: string,
-    image_cover: string,
+    image_big: string,
     date: string,
     lead: string
 }

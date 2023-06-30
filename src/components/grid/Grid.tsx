@@ -56,7 +56,7 @@ const Grid = () => {
                         return <Card key={index}
                             date={model.date}
                             id={model.id}
-                            image_cover={model.image_cover}
+                            image_big={model.image_big}
                             title={model.title}
                             lead={model.lead}/>
                     }) : new Array(9).fill(1).map((_, index) => {
