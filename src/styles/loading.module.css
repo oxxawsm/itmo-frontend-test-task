@@ -1,0 +1,35 @@
+.loadGrid {
+    animation-duration: 1.5s;
+    animation-name: grid-loading;
+    animation-iteration-count: infinite;
+}
+
+.loadText {
+    width: 100%;
+    height: 6rem;
+}
+
+.loadDate {
+    width: 100%;
+    height: 1rem;
+}
+
+.loadImage {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes grid-loading {
+    0%, 100% {
+        opacity: 1;
+        border-radius: 1em;
+        color: #c0c0c0;
+        background: #c0c0c0;
+    }
+
+    50%  {
+        opacity: 0.8;
+        color: #dcdcdc;
+        background: #dcdcdc;
+    }
+}

@@ -1,0 +1,82 @@
+.title {
+    font-size: 2.2rem;
+}
+
+.textColor {
+    color: var(--text-default-color);
+}
+
+.container {
+    width: var(--body-width);
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+
+.secondaryText {
+    color: var(--text-secondary-color);
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+    .cardTitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cardTitle {
+        font-size: 0.8rem;
+    }
+
+    .secondaryText {
+        font-size: 0.7rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+.card {
+    padding: 1.2rem 1.5rem;
+
+    @media screen and (max-width: 300px) {
+      padding: 0.8rem 1.1rem;
+    }
+}
+
+.cardContainer {
+    min-width: 20rem;
+    width: 22vw;
+    min-height: 27rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border-radius: 1rem;
+    transition: 200ms ease background-color;
+    
+    @media screen and (max-width: 400px) {
+      min-width: 80vw;
+    }
+  
+    @media screen and (min-width: 730px) and (max-width: 850px) {
+      min-width: 18rem;
+    }
+}
+
+.cardContainer:hover {
+    background: lightgray;
+}
+
+.imageContainer {
+    height: 14rem;
+    position: relative;
+}
+

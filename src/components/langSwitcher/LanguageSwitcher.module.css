@@ -1,0 +1,75 @@
+.menu {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    padding: 0;
+    margin: 3rem 0 0 0;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background-color);
+    box-shadow: var(--card-shadow);
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms background-color ease;
+    color: var(--text-default-color);
+}
+
+.option:hover{
+    background: #F2F4FF;
+    color: var(--text-default-color);
+}
+
+.choice {
+    width: 100%;
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    align-items: center;
+    cursor: pointer;
+    color: var(--background-color);
+}
+
+.arrow {
+    height: 4px;
+    position: relative;
+    width: 1rem;
+}
+
+ .arrow:before, .arrow:after {
+    content: "";
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    height: 2px;
+    width: 9px;
+}
+
+.arrow:before {
+    right: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.arrow:after {
+    right: -5px;
+    top: 2px;
+    transform: rotate(-45deg);
+}

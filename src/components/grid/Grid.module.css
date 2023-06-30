@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 730px) {
+        justify-content: center;
+      }
+}
+
