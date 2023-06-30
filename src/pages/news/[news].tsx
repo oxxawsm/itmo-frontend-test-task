@@ -50,15 +50,29 @@ const New = (props: CardProps) => {
     const {locale} = useTypedSelector(state => state.locale)
 
     const title = () => {
-      return locale === Languages.RUSSIAN ? 'Новость' : 'New'
+      return locale === Languages.RUSSIAN ? 'Новость' : 'News'
     }
+
+    const titleWrong = () => {
+        return locale === Languages.RUSSIAN ? 'Здесь ничего нет' : "There's nothing here"
+    }
+
+    if (!currentNews && fetched)
+    return (
+        <>
+            <Header/>
+            <div className={styles.container}>
+                <h1 className={`${styles.title} ${styles.textColor}`}></h1>
+            </div>
+        </>
+    )
 
 
     return (
         <>
             <Header/>
             <div className={styles.container}>
-                <h1 className={`${styles.title} ${styles.textColor} ${fetched ? "" : animations.skeleton}`}>{title()}</h1>
+                <h1 className={`${styles.title} ${styles.textColor} ${fetched ? "" : animations.loadGrid}`}>{title()}</h1>
                 {
                     fetched ? <div dangerouslySetInnerHTML={{ __html: currentNews!.lead }}/> : null
                 }
